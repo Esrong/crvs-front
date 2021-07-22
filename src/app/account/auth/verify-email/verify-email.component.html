@@ -1,0 +1,30 @@
+
+<body class="page-forgot">
+    <main class="page-content">
+        <div class="page-inner">
+            <div id="main-wrapper">
+                <div class="row">
+                    <div class="col-md-4 center">
+                        <div class="panel panel-white" id="js-alerts">
+                            <div class="panel-body">
+                                <div class="login-box">
+                                    <a  class="logo-name text-lg text-center m-t-xs">CRVS</a>
+                                    <p class="text-center m-t-md">Please verify  your email address</p>
+                                    <div class="card-body">
+                                        <div *ngIf="emailStatus == EmailStatus.Verifying">
+                                            Verifying...
+                                        </div>
+                                        <div *ngIf="emailStatus == EmailStatus.Failed">
+                                            Verification failed, you can also verify your account using the <a routerLink="/account/reset-password">forgot password</a> page.
+                                        </div>
+                                    </div>
+                                    <p class="text-center m-t-xs text-sm">2021 &copy; crvs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Row -->
+            </div><!-- Main Wrapper -->
+        </div><!-- Page Inner -->
+    </main><!-- Page Content -->
+</body>

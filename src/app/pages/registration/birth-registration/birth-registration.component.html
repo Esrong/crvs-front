@@ -1,0 +1,183 @@
+<div class="container-fluid">
+
+    <!-- start page title -->
+    <app-pagetitle title="Form mask" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+    <!-- end page title -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title mb-4">Example</h4>
+            <form [formGroup]="createBirthForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <div class="col-md-6">                        
+                         <div class="form-group mb-4">
+                             <label>First Name</label>
+                             <input type="text" 
+                             formControlName="name"
+                             class="form-control" 
+                             name="name"
+                              id="name" 
+                              placeholder="First Name">
+                         </div>
+                         <div class="form-group mb-4">
+                             <label>Father Name</label>
+                             <input type="text"
+                             formControlName="fname"
+                              class="form-control" 
+                              name="fname" 
+                              id="fname" 
+                              placeholder="Last Name" >
+                         </div>
+                         <div class="form-group mb-4">
+                             <label>Grand Name</label>
+                             <input type="text" 
+                             formControlName="gname"
+                             class="form-control"
+                              name="gname"
+                               id="gname" 
+                               placeholder="Grand Name" >
+                         </div>
+                         <div class="form-group mb-4">  
+                             <label>Gender</label>
+                             <select name="gender" formControlName="gender" class="form-control">
+                                 <option value="Male">male</option>
+                                 <option>female</option>
+                     
+                             </select>
+                         
+                         </div>
+                         <div class="form-group mb-4">
+                             <label>Birth Date</label>
+                             <input type="text"
+                             formControlName="birthDate"
+                              class="form-control"
+                               name="birthDate" 
+                               id="birthDate" 
+                               placeholder="Birth Date" >
+                         </div>
+                         <div class="form-group mb-4">
+                             <label>Age</label>
+                             <input type="text" 
+                             formControlName="age"
+                             class="form-control" 
+                             name="age" 
+                             id="age"
+                              placeholder="Age" >
+                         </div>
+                         <div class="form-group mb-4">
+                             <label >Place of birth</label>
+                             <input type="text" 
+                             formControlName="birthPlace"
+                             class="form-control"
+                              name="birthPlace" 
+                              id="birthPlace"
+                              placeholder="Place of birth" >
+                         </div>  
+            
+                    </div>
+                    <div class="col-md-6">
+                     <div class="form-group mb-4">
+                         <label>Aid during Birth</label>
+                         <input type="text" 
+                         formControlName="birthAid"
+                         class="form-control"
+                          name="birthAid" 
+                          id="birthAid" 
+                          placeholder="Aid during birth" >
+                     </div>
+                     <div class="form-group mb-4">
+                         <label>Ethnic Origin</label>
+                         <input type="text"
+                         formControlName="ethnicOrigin"
+                          class="form-control" 
+                          name="ethnicOrigin" 
+                          id="ethnicOrigin"
+                           placeholder="ethnic origin" >
+                     </div>
+                     <div class="form-group mb-4">
+                         <label>Citizenship </label>
+                         <input type="text" 
+                         formControlName="citizenship"
+                         class="form-control"
+                          name="citizenship"
+                           id="citizenship"
+                            placeholder="Citizenship" >
+                     </div>
+                     <div class="form-group mb-4">
+                         <label >Regin</label>
+                         <input type="text" 
+                         formControlName="region"
+                         class="form-control"
+                          name="region" 
+                          id="region"
+                           placeholder="Region" >
+                     </div>
+                     <div class="form-group mb-4">
+                         <label>zone</label>
+                         <input type="text" 
+                         formControlName="zone"
+                         class="form-control" 
+                         name="zone" 
+                         id="zone"
+                          placeholder="zone" >
+                     </div>
+                     <div class="form-group mb-4">
+                         <label>wereda</label>
+                         <input type="text" 
+                         formControlName="wereda"
+                         class="form-control"
+                          name="wereda" 
+                          id="wereda"
+                          placeholder="wereda" >
+                     </div>
+                     <div class="form-group mb-4">
+                         <label>Kebele</label>
+                         <input type="text" 
+                         formControlName="kebele"
+                         class="form-control"
+                          name="kebele"
+                           id="kebele"
+                            placeholder="kebele" >
+                     </div>
+                     <div class="col-md-6">
+                        <div class="form-group md-4">
+                            <label >Father ID</label>
+                            <input type="text" 
+                            formControlName="fatherInfo"
+                            class="form-control"
+                             name="fatherInfo" 
+                             id="fatherInfo" 
+                             placeholder="Father ID" >
+                        </div>
+                        <div class="form-group md-4">
+                            <label>Mother ID</label>
+                            <input type="text" 
+                            formControlName="motherInfo"
+                            class="form-control" 
+                            name="motherInfo" 
+                            id="motherInfo" 
+                            placeholder="Mother ID">
+                        </div>
+                        <div class="form-group md-4">
+                            <label>Declarant other than parents Id</label>
+                            <input type="text"  
+                            formControlName="otherThanParent"
+                            class="form-control"
+                             name="otherThanParent"
+                              id="otherThanParent"
+                               placeholder="other than parents Id">
+                        </div>
+                     </div>
+                    
+                    </div>
+                  
+                </div>
+                <button class="btn btn-primary float-right" type="submit">submit</button>              
+            </form>     
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
